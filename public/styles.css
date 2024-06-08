@@ -1,0 +1,76 @@
+/* Put your CSS styles here */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+#chat-box {
+    display: none;
+    width: 80%;
+    max-width: 600px;
+    height: 70vh;
+    border: 1px solid #ccc;
+    background-color: white;
+    overflow-y: auto;
+    margin-top: 20px;
+    padding: 10px;
+}
+
+.message-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.message {
+    padding: 5px 10px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    max-width: 70%;
+}
+
+.message-sender {
+    background-color: #007bff;
+    color: white;
+    align-self: flex-end;
+}
+
+.message-other {
+    background-color: #f0f0f0;
+    color: black;
+    align-self: flex-start;
+}
+
+#message-input {
+    display: none;
+    width: 80%;
+    max-width: 600px;
+    margin-top: 20px;
+}
+
+#message-input input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-right: none;
+}
+
+#message-input button {
+    padding: 10px 20px;
+    border: 1px solid #ccc;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+}
+
+#message-input button:hover {
+    background-color: #0056b3;
+}
